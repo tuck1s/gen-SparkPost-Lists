@@ -16,7 +16,7 @@
 //limitations under the License.
 
 //
-// Author: Steve Tuck (June 2016)
+// Author: Steve Tuck (August 2016)
 //
 $countDefault = 10;                             // Default number of suppressions
 $domainDefault = "sedemo.sink.sparkpostmail.com";      // Safe default
