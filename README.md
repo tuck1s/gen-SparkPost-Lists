@@ -6,7 +6,7 @@ Redirect output to a file with >myfile.csv, then upload the file using the Spark
 
 ## Usage
 
-```bash
+```
 NAME
    ./gen-sparkpost-lists.php
    Generate a random, SparkPost-compatible Recipient- or Suppression-List for .CSV import.
@@ -21,7 +21,7 @@ OPTIONAL PARAMETERS
 
 ##Example output
 
-```bash
+```
 ./gen-sparkpost-lists.php recip 10 
 email,name,return_path,metadata,substitution_data,tags
 anon45647117@sedemo.sink.sparkpostmail.com,"Fred Bloggs",bounce@sedemo.sink.sparkpostmail.com,"{""foo"": ""bar""}","{""member"": ""Platinum"", ""region"": ""US""}",
