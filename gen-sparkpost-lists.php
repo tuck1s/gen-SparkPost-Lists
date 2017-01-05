@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 // Generate random suppressions CSV file
-//Copyright  2016 SparkPost
+//Copyright  2017 SparkPost
 
 //Licensed under the Apache License, Version 2.0 (the "License");
 //you may not use this file except in compliance with the License.
@@ -16,10 +16,10 @@
 //limitations under the License.
 
 //
-// Author: Steve Tuck (August 2016)
+// Author: Steve Tuck (January 2017)
 //
-$countDefault = 10;                             // Default number of suppressions
-$domainDefault = "sedemo.sink.sparkpostmail.com";      // Safe default
+$countDefault = 10;                                     // Default number of suppressions
+$domainDefault = "sedemo.sink.sparkpostmail.com";       // Safe default
 
 function printHelp()
 {
@@ -50,16 +50,20 @@ function randomRecip($domain, $digits, &$ensureUnique)
 
 function randomMeta()
 {
-    return('{"foo": "bar"}');
+    $exampleMeta = ['foo' => 'bar'];                    // Your metadata goes here
+    return(json_encode($exampleMeta));
 }
 
 function randomSubData()
 {
-    return('{"member": "Platinum", "region": "US"}');
+    // Your substitution data goes here
+    $exampleSubData = ['member' => 'Platinum', 'region' => 'US'];
+    return(json_encode($exampleSubData));
 }
 
 function randomName()
 {
+    // Your readable name goes here
     return('Fred Bloggs');
 }
 
