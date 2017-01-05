@@ -1,4 +1,4 @@
-# gen-SparkPost-Lists
+# gen-SparkPost-Lists-php
 Simple command-line tool to create example, randomised Suppression and Recipient Lists for import into SparkPost (in .CSV format).
 
 This is useful for any testing that requires lists of specified size, as the email-address uniqueness is checked and enforced.
